@@ -138,51 +138,66 @@ a:focus {
     }
 }
 
-.intro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: url(/app/assets/img/5_de_mayo.jpg) no-repeat  scroll;
-    background-position: 45% 15%;
-    -webkit-filter: grayscale(100%);
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
+/*-----------------------HERO SECTION--------------------------*/
+
+    .intro {
+        display: table;
+        width: 100%;
+        height: auto;
+        /*padding: 100px 0;*/
+        text-align: center;
+        color: #fff;
+        /*background: url(/app/assets/img/5_de_mayo-crop2-lg.jpg) no-repeat  scroll;*/
+        /*background-position: 45% 15%;*/
+        -webkit-filter: grayscale(100%);
+        /*background-color: #000;*/
+        /*-webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;*/
+        
+    }
 
 .intro .intro-body {
-    display: table-cell;
+    /*display: table-cell;
     vertical-align: middle;
+    position: relative;    */
 }
 
-.intro .intro-body .brand-heading {
-    font-size: 40px;
-
+.brand{
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
 
-.intro .intro-body .intro-text {
-    font-size: 18px;
+.brand .brand-heading{
+ font-size: 35px;
 }
+
+ .brand .brand-arrow{
+     margin-top: -30px;
+      margin-bottom: -10px;
+}
+
+
 .make-primary{
     color:#42dca3;
 }
 
-@media(min-width:768px) {
+@media(min-width:400px) {
+
+  
     .intro {
-        height: 100%;
-        padding: 0;
+       /* height: 100%;
+        padding: 0;*/
     }
+    .intro-body  img{
+    /*margin-top: 160px;*/
+     /*position: relative;   */
+}
 
     .intro .intro-body .brand-heading {
-        font-size: 80px;
-        position: relative;
-        top:-80px;
-
+        /*font-size: 90px;
+         padding-top: 45px;*/
     }
 
     .intro .intro-body .intro-text {
@@ -191,11 +206,54 @@ a:focus {
     }
 }
 
+
+
+@media(min-width:768px) {
+    
+    .brand{
+          margin-top: 60px;
+          margin-bottom: 200px;
+          position: absolute;
+          top:15px;
+          margin-left: -130px;        
+}
+.brand .brand-heading{
+ font-size: 50px;
+}  
+    .brand-heading {
+           /* font-size: 70px;
+             padding-top: 45px;*/
+        }
+
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro-body  img{
+    margin-top: -170px;
+}
+
+}
+@media(min-width:1000px) {
+     
+     .brand{
+          margin-top: 60px;
+          margin-bottom: 200px;
+          position: absolute;
+          top:35px;
+          margin-left: -130px;        
+}
+.brand .brand-heading{
+ font-size: 60px;
+}  
+    
+}
 .btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
+    width: 55px;
+    height: 55px;
+    margin-top: -35px;
+    padding: 1px 10px;
     border: 2px solid #fff;
     border-radius: 100%!important;
     font-size: 40px;
