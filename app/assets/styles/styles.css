@@ -38,6 +38,10 @@ p {
     line-height: 1.5;
 }
 
+.icons{
+    margin-right: 10px;
+}
+
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
@@ -149,15 +153,13 @@ a:focus {
         color: #fff;
         /*background: url(/app/assets/img/5_de_mayo-crop2-lg.jpg) no-repeat  scroll;*/
         /*background-position: 45% 15%;*/
-        -webkit-filter: grayscale(100%);
+        /*-webkit-filter: grayscale(100%);*/
         /*background-color: #000;*/
         /*-webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
-        -o-background-size: cover;*/
-        
+        -o-background-size: cover;*/    
     }
-
 .intro .intro-body {
     /*display: table-cell;
     vertical-align: middle;
@@ -165,7 +167,7 @@ a:focus {
 }
 
 .brand{
-  margin-top: 70px;
+  margin-top: 90px;
   margin-bottom: 30px;
 }
 

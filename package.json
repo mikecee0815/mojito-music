@@ -2,6 +2,7 @@
   "name": "travel-site",
   "version": "1.0.0",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "jquery": "^2.2.4",
     "normalize.css": "^4.1.1"
   },
