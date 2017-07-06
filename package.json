@@ -35,6 +35,7 @@
     "postcss-mixins": "^4.0.2",
     "postcss-nested": "^1.0.0",
     "postcss-simple-vars": "^1.2.0",
+    "scrollreveal": "^3.3.6",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
     "webpack": "^2.6.1"

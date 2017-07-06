@@ -2,6 +2,7 @@
  require('lazysizes');
  require('jquery-scrollToTop');
  require('bootstrap-sass');
+ require('scrollreveal');
  
 
  //var Person = require('./modules/Person.js');
@@ -23,4 +24,8 @@ oldman.foo();
 
  me.sayHello();
  user.greetMe();
+
+// window.sr = new ScrollReveal();
+//     sr.reveal('.col__left');
+//     sr.reveal('.col__right');
  

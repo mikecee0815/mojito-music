@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link href="./app/temp/styles/styles.css" rel="stylesheet">
 
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -96,11 +97,11 @@
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-lg-6 col-md-6 col-sm-6 col__left" data-sr>
                 <h2 class="make-primary"><span class = "icons"><i class="fa fa-music fa-fw" aria-hidden="true"></i></span>About Me</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus a amet perferendis mollitia consectetur. Harum officia illo cum? Velit, architecto!</p>    
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-lg-6 col-md-6 col-sm-6 col__right" data-sr>
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item lazyload" data-src="http://www.youtube.com/embed/ePbKGoIGAXY">
                     </iframe>
@@ -112,11 +113,11 @@
     <!-- Download Section -->
     <section id="download" class="content-section container text-center">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm-6 col__left">
                     <h2 class="make-primary"><span class = "icons" ><i class="fa fa-telegram fa-fw" aria-hidden="true"></i></span>Services</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus a amet perferendis mollitia consectetur. Harum officia illo cum? Velit, architecto!</p>   
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm-6 col__right">
                     <img class="img-responsive lazyload" data-src="/app/assets/img/festival2015.jpg" alt="Chania">
                 </div>   
             </div>
@@ -125,7 +126,7 @@
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-8 col-lg-offset-2 contact-scroll">
                 <h2 class = "make-primary"><span class = "icons"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i></span>Contact</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolor, incidunt, tempore earum delectus voluptas aliquid minima quaerat eos eaque expedita a nulla, sequi aliquam, iure repudiandae laboriosam error porro.</p>
                 <!-- <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a> -->
@@ -174,6 +175,13 @@
 
 <script src="js/scrollTotop.js"></script>
 <script src="./app/temp/scripts/bundle.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+    window.sr = ScrollReveal({ reset: true });
+    sr.reveal('.col__left', {opacity: 0,duration:1000,scale: 0.99,origin: 'left'});
+    sr.reveal('.col__right',{opacity: 0,duration:1000,scale: 0.99,origin: 'right'});
+    sr.reveal('.contact-scroll',{opacity: 0,duration:2000,scale: 0.89,origin: 'top'});
+</script>
     
 
 </body>
