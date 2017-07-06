@@ -9889,32 +9889,57 @@ return jQuery;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-function Greeter(fullName){
- 	this.fname = fullName;
- 	this.greetMe = function(){
- 		console.log("Hello again!  " + this.fname + "  from the Greeter class " );
- 	}
- }
+"use strict";
 
 
- module.exports = Greeter;
+function Greeter(fullName) {
+  this.fname = fullName;
+  this.greetMe = function () {
+    console.log("Hello again!  " + this.fname + "  from the Greeter class ");
+  };
+}
+
+module.exports = Greeter;
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-function Person(fullName, Age){
- 	this.name = fullName;
- 	this.age = Age;
- 	this.sayHello = function(){
- 		console.log("Hellooo !!! " + this.name + " " + this.age);
- 	}
- }
+"use strict";
 
 
- module.exports = Person;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Person = function () {
+  function Person(fullName, Age) {
+    _classCallCheck(this, Person);
+
+    this.name = fullName;
+    this.age = Age;
+  }
+
+  _createClass(Person, [{
+    key: "sayHello",
+    value: function sayHello() {
+      console.log("WAZZUP!! !!! " + this.name + " " + this.age);
+    }
+  }]);
+
+  return Person;
+}();
+
+//module.exports = Person;
+
+
+exports.default = Person;
 
 /***/ }),
 /* 3 */
@@ -13561,21 +13586,58 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
- var $ = __webpack_require__(0);
- __webpack_require__(5);
- __webpack_require__(4);
- __webpack_require__(3);
- var Person = __webpack_require__(2);
- var Greeter = __webpack_require__(1);
+"use strict";
 
 
- var me =  new Person("michael Corporan" , "47");
- var user =  new Greeter("Mr. Michael Corporan" );
- me.sayHello();
- user.greetMe();
- jQuery(document).ready(function($) {
- 	
- });
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _Person2 = __webpack_require__(2);
+
+var _Person3 = _interopRequireDefault(_Person2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var $ = __webpack_require__(0);
+__webpack_require__(5);
+__webpack_require__(4);
+__webpack_require__(3);
+
+//var Person = require('./modules/Person.js');
+
+var senior = function (_Person) {
+  _inherits(senior, _Person);
+
+  function senior() {
+    _classCallCheck(this, senior);
+
+    return _possibleConstructorReturn(this, (senior.__proto__ || Object.getPrototypeOf(senior)).apply(this, arguments));
+  }
+
+  _createClass(senior, [{
+    key: 'foo',
+    value: function foo() {
+      console.log('Senior FOO!!!');
+    }
+  }]);
+
+  return senior;
+}(_Person3.default);
+
+var Greeter = __webpack_require__(1);
+
+var me = new _Person3.default("michael f. Corporan", "47");
+var user = new Greeter("Mr. Michael Corporan");
+var oldman = new senior("Mr. Michael Corporan sr", "65");
+oldman.foo();
+
+me.sayHello();
+user.greetMe();
 
 /***/ })
 /******/ ]);

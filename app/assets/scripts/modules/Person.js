@@ -1,10 +1,14 @@
-function Person(fullName, Age){
- 	this.name = fullName;
- 	this.age = Age;
- 	this.sayHello = function(){
- 		console.log("Hellooo !!! " + this.name + " " + this.age);
- 	}
+class Person{
+		constructor(fullName, Age) {
+			this.name = fullName;
+ 			this.age = Age;
+		}
+		sayHello(){
+ 		console.log("WAZZUP!! !!! " + this.name + " " + this.age);
+ 		}
+ 	
  }
 
 
- module.exports = Person;
+ //module.exports = Person;
+ export default Person;
